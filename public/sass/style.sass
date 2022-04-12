@@ -1,0 +1,86 @@
+body, ul
+    padding: 0px
+    margin: 0px
+li, a
+    text-decoration: none
+    color: black
+    list-style: none
+.newsletter
+        background-color: violet
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 100%
+        &_champs
+            display: flex
+            justify-content: center 
+            margin: 0px auto
+nav
+    height: 150px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    .menu
+        ul
+            display: flex
+            flex-wrap: wrap
+            li
+                margin: 0px 10px
+nav
+    img
+        height: 100%
+#contenu
+    width: 1300px
+    h1,h2
+        text-align: center
+.container
+    display: flex
+    justify-content: center
+footer
+    background-color: rgb(65, 65, 65)
+    display: flex
+    justify-content: center
+    .containerdeux
+        display: flex
+        justify-content: center
+        width: 200px
+#facebook,#twitter,#insta
+    a
+        color: white
+footer
+    img
+        width: 100%
+.centrage
+    width: 200px
+
+@media (min-width:320px) and (max-width:768px)
+    img
+        display: none
+    .newsletter
+        flex-direction: column
+        align-items: center
+        &_champs
+            align-items: center
+            padding: 10px
+            flex-direction: column
+    nav
+        height: 100%
+        flex-direction: column
+        .menu
+            flex-direction: column
+            ul
+                text-align: center
+                flex-direction: column
+                li
+                    margin: 10px
+                    font-size: 0.8em
+    #contenu
+        margin: 30px
+@media (min-width:768px) and (max-width:1024px)
+    nav
+        li
+            font-size: 0.6em
+    .logo
+        width: 200px
+        img
+            width: 100%
